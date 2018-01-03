@@ -230,20 +230,114 @@ Geographical location used for caching. i.e. if asset is requested from London r
 - ETL
 
 ### Security, Identity and Compliance 
-#### 
+#### IAM (Key Requirement):
+- Identity Access Management
+
+#### Cognito:
+- Authentication for mobile devices.
+
+#### Guard Duty:
+- Watches your AWS setup for suspicious activity
+
+#### Inspector:
+- VM agent installable in EC2 etc. for testing for security vunerabilities. 
+
+#### Macie:
+- Scans S3 buckets for PII and alters.
+
+#### Certificate Manager:
+- SSL cert management.
+
+#### Cloud HSM:
+- Hardware security modules
+
+#### Directory Service:
+- Integrate Active Directory
+
+#### WAF:
+- Web Application Firewall. Stops XSS etc.
+
+#### Shield:
+- DDOS mitigation
+
+#### Artifact:
+- Audit/Compliance reports.
 
 ### Mobile Services:
+#### Mobile Hub:
+- Manage AWS services for mobile. Mobile backends.
+
+#### Pinpoint:
+- Targetted puch notifications for mobile. 
+
+#### Appsync:
+- Updates data in real time and for offline for mobile. 
+
+#### Device farm:
+- Testing for mobile. Many different device types. 
+
+#### Mobile Analytics:
+- Analytics service for mobiles. 
+
 
 ### AR/VR:
+#### Sumerian:
+- Tools for build VR/AR worlds
 
-### Application Integration:
+### Application Integrations:
+#### Step functions:
+- Management of Lambda functions.
+
+#### Amazon MQ:
+- Message queuing
+
+#### SNS:
+- Notification service.
+
+#### SQS:
+- Worker queues.
+
+#### SWF:
+- Simple Work Flow service.
+- Jobs. Can involve human interaction i.e. amazon uses it in Warehouse.
 
 ### Customer Engagement:
+#### Connect:
+- Contact centre as a service
+
+#### Simple Email Service:
+- Large emailer.
+
 
 ### Business Productivity:
+#### Alexa for Business:
+- Extending alexa functionality for corporate.
+
+#### Chime:
+- Video conferencing.
+
+#### Work Docs:
+- Dropbox for AWS.
+
+#### Work Mail:
+- Office 365 for Amazon
+
 
 ### Desktop and App Streaming:
+#### Workspaces:
+- VDI solution. Desktop in the cloud.
 
-### Internet of Things:
+#### Appstream:
+- Streaming applications form cloud to device. Citrix-ish
+
+### Internet of Things (IoT):
+#### iOT:
+#### iOT Device Management:
+#### Amazon Free RTOS:
+- OS for IoT devices.
+#### Green grass
+- Integration for other AWS services for IOT devices.
 
 ### Game Development:
+#### Gamelift:
+- Serrice to aid game development.
