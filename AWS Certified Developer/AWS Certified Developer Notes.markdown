@@ -124,14 +124,113 @@ Geographical location used for caching. i.e. if asset is requested from London r
 - Development IDE.
 
 ### Management Tools:
+#### Cloud Watch:
+- AWS monitoring system
+
+#### Cloud Formation:
+- Infrastructure scripting (Infrastructure as Code)
+
+#### Cloud Trail
+- Logs changes to AWS environment
+
+#### Config:
+- Montors config of entire AWS setup. Point in time snapshots.
+
+#### OpsWorks:
+- Chef/Puppet automation of environment configuration.
+
+#### Service Catalog: 
+- Catalog of IT Services approved for use.
+
+#### Systems Manager:
+- Interface for managing EC2 resources. 
+- Grouping resources
+- Departments
+- Rollout of patches
+
+#### Trusted Advisor
+- Advice around security and utilage. 
+
+#### Managed services: 
+- Amazon managed EC2.
 
 ### Media Services: 
+#### Elastic Transcoder:
+- Resizes media so it looks good on a variety of devices.
+
+#### Media Convert:
+- File based video transcoder.
+
+#### Media Live:
+- Live video streaming
+
+#### Media Package:
+- Package videos for download
+
+#### Media Store:
+- Media storage
+
+#### Media Tailor:
+- Targetted advertising into video streams.
 
 ### Machine Learning:
+#### Sage Maker:
+- Deep learning.
+ 
+#### Comprehend:
+- Understand what the market is saying about your products.
+
+#### Deep Lens:
+- AR camera.
+
+#### Lex:
+- AI customer chat. Powers Alexa.
+
+#### Machine Learning:
+- Analysis of data sets. Outcome prediction.
+
+#### Polly:
+- Text to speech.
+
+#### Rekognition:
+- Video and image recognition.
+
+#### Translate:
+- Language translation
+
+#### Transcribe:
+- Speech recognition and turns into text.
 
 ### Analytics:
+#### Athena:
+- SQL queries against S3 buckets.
+
+#### Elastic Map Reduce (EMR)
+- Big Data
+
+#### Cloud Search:
+- Search services
+
+#### Elastic Search:
+- Search service
+
+####  Kinesis:
+- Ingest large amounts of data. 
+
+#### Kenesis Video Streams:
+- As above with video.
+
+#### Quick Sight
+- BI tool. View business intelligence data.
+
+#### Data pipeline
+- Move data between different AWS services.
+
+#### AWS Glue
+- ETL
 
 ### Security, Identity and Compliance 
+#### 
 
 ### Mobile Services:
 
