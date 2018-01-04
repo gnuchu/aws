@@ -11,7 +11,7 @@ Physical data centre. Regions typically have a number of AZs for failover.
 ### Edge Location: 
 Geographical location used for caching. i.e. if asset is requested from London region by user in Australia there will be network latency. After the first request for specific asset it will be cached in the Edge Location closest to Australia and served from there for subsequent requests. Typically using Cloudfront CDN.
   > Questions:
-  > 
+  >
   > How are changes pushed out to caches?
   > Is this done automatically or do you have to set up you instances in a specific way to use them?
 
@@ -176,7 +176,7 @@ Geographical location used for caching. i.e. if asset is requested from London r
 ### Machine Learning:
 #### Sage Maker:
 - Deep learning.
- 
+
 #### Comprehend:
 - Understand what the market is saying about your products.
 
@@ -345,8 +345,20 @@ Geographical location used for caching. i.e. if asset is requested from London r
 
 ## Certificates
 ### AWS Solutions Architect Associate:
-[SA Image]: img/SA.png "Services to study" 
+
+![SA Cert](img/SA.png)
 
 ### AWS Developer Associate:
 
+![DA](img/DA.png)
+
 ### AWS Sysops Associate:
+
+![Sysops](img/sysops.png)
+
+
+
+
+
+
+
