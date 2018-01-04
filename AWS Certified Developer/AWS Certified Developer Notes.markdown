@@ -340,4 +340,4 @@ Geographical location used for caching. i.e. if asset is requested from London r
 
 ### Game Development:
 #### Gamelift:
-- Serrice to aid game development.
+- Service to aid game development.
