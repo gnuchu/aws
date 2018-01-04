@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AWS Certified Developer Notes.markdown</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<h1 id="aws-notes-">AWS Notes:</h1>
+<p>AWS Terminology and Services</p>
+<h2 id="lecture-1-">Lecture 1:</h2>
+<h3 id="region-">Region:</h3>
+<p>Geographical location where data centres can be located.</p>
+<h3 id="availability-zone-">Availability Zone:</h3>
+<p>Physical data centre. Regions typically have a number of AZs for failover.</p>
+<h3 id="edge-location-">Edge Location:</h3>
+<p>Geographical location used for caching. i.e. if asset is requested from London region by user in Australia there will be network latency. After the first request for specific asset it will be cached in the Edge Location closest to Australia and served from there for subsequent requests. Typically using Cloudfront CDN.</p>
+<blockquote>
+<p>Questions:</p>
+<p>How are changes pushed out to caches?<br>Is this done automatically or do you have to set up you instances in a specific way to use them?</p>
+</blockquote>
+<h2 id="lecture-2-">Lecture 2:</h2>
+<h2 id="compute-">Compute:</h2>
+<h4 id="ec2-">EC2:</h4>
+<ul>
+<li>Elastic Compute Cloud. AWS Virtual Machines.</li>
+</ul>
+<h4 id="elastic-container-service-">Elastic Container Service:</h4>
+<ul>
+<li>EC2 docker hosting</li>
+</ul>
+<h4 id="elastic-beanstalk-">Elastic Beanstalk:</h4>
+<ul>
+<li>Some magic service where you upload your code and it figures out what you need and then provisions it for you. </li>
+</ul>
+<h4 id="lightsail-">Lightsail:</h4>
+<ul>
+<li>VPS Service. Server with fixed IP. Management console.</li>
+</ul>
+<h4 id="lambda-">Lambda:</h4>
+<ul>
+<li>Serverless Websites</li>
+</ul>
+<h4 id="batch-outside-scope-of-certificate-">Batch (Outside scope of Certificate):</h4>
+<ul>
+<li>Batch computing. </li>
+</ul>
+<h3 id="storage-">Storage:</h3>
+<h4 id="s3-simple-storage-service">S3 - Simple Storage Service</h4>
+<ul>
+<li>Object based storage. Buckets. File into buckets.</li>
+</ul>
+<h4 id="efs-elastic-file-system">EFS - Elastic File System</h4>
+<ul>
+<li>NAS - network Attached Storage.Mountable to multiple VMs.</li>
+</ul>
+<h4 id="glacier">Glacier</h4>
+<ul>
+<li>Data archival.</li>
+</ul>
+<h4 id="snowball-">Snowball:</h4>
+<ul>
+<li>Manual import for large amounts of data.</li>
+</ul>
+<h4 id="storage-gateway-">Storage Gateway:</h4>
+<ul>
+<li>Internal storage that replicate to AWS.</li>
+</ul>
+<h3 id="databases-">Databases:</h3>
+<h4 id="rds-relational-database-service">RDS - Relational Database Service</h4>
+<ul>
+<li>mysql, mssql, mariadb etc. etc. Std sql datbases.</li>
+</ul>
+<h4 id="dynamo-db-">Dynamo DB:</h4>
+<ul>
+<li>Non relational database. Mongo etc. </li>
+</ul>
+<h4 id="elasticache-">Elasticache:</h4>
+<ul>
+<li>Database caching.</li>
+</ul>
+<h4 id="red-shift-">Red Shift:</h4>
+<ul>
+<li>Data warehousing/BI </li>
+</ul>
+<h3 id="migration-">Migration:</h3>
+<h4 id="aws-migration-hub-">AWS Migration Hub:</h4>
+<ul>
+<li>Hub for tracking application migration to AWS</li>
+<li><blockquote>
+<p>What?</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="application-discovery-service">Application Discovery Service</h4>
+<ul>
+<li>Tracking of application dependencies.</li>
+<li><blockquote>
+<p>What?</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="database-migration-service-">Database Migration Service:</h4>
+<ul>
+<li>Migration of on premise to AWS.</li>
+</ul>
+<h4 id="server-migration-service-">Server Migration Service:</h4>
+<ul>
+<li>Migration of on premise to AWS</li>
+</ul>
+<h4 id="snowball">Snowball</h4>
+<ul>
+<li>Migration of large amounts of data.</li>
+</ul>
+<h3 id="network-and-cdn-">Network and CDN:</h3>
+<h4 id="vpc-virtual-private-cloud-fundamental-to-cert-">VPC: Virtual Private Cloud (Fundamental to cert)</h4>
+<ul>
+<li>Virtual data centre. </li>
+</ul>
+<h4 id="cloudfront-">Cloudfront:</h4>
+<ul>
+<li>AWS CDN service</li>
+</ul>
+<h4 id="route-53-">Route 53:</h4>
+<ul>
+<li>AWS DNS Service</li>
+</ul>
+<h4 id="api-gateway-">API Gateway:</h4>
+<ul>
+<li>Creating APIs for own services</li>
+<li><blockquote>
+<p>What? </p>
+</blockquote>
+</li>
+</ul>
+<h4 id="direct-connect-">Direct Connect:</h4>
+<ul>
+<li>Direct line from corporate top AWS.</li>
+</ul>
+<h3 id="developer-tools-">Developer Tools:</h3>
+<h4 id="codestar-">Codestar:</h4>
+<ul>
+<li>Collaborative working plus CI</li>
+</ul>
+<h4 id="code-commit-">Code Commit:</h4>
+<ul>
+<li>Source control storage.</li>
+</ul>
+<h4 id="code-build-">Code Build:</h4>
+<ul>
+<li>CI system.</li>
+</ul>
+<h4 id="codedeploy-">CodeDeploy:</h4>
+<ul>
+<li>Automation of code deploy to various AWS services i.e. EC2, Lambda, VPC.</li>
+</ul>
+<h4 id="codepipeline-">CodePipeline:</h4>
+<ul>
+<li>Continuous Delivery Service</li>
+</ul>
+<h4 id="xray-">XRay:</h4>
+<ul>
+<li>Debugging of serverless applications. </li>
+</ul>
+<h4 id="cloud-9-">Cloud 9:</h4>
+<ul>
+<li>Development IDE.</li>
+</ul>
+<h3 id="management-tools-">Management Tools:</h3>
+<h4 id="cloud-watch-">Cloud Watch:</h4>
+<ul>
+<li>AWS monitoring system</li>
+</ul>
+<h4 id="cloud-formation-">Cloud Formation:</h4>
+<ul>
+<li>Infrastructure scripting (Infrastructure as Code)</li>
+</ul>
+<h4 id="cloud-trail">Cloud Trail</h4>
+<ul>
+<li>Logs changes to AWS environment</li>
+</ul>
+<h4 id="config-">Config:</h4>
+<ul>
+<li>Montors config of entire AWS setup. Point in time snapshots.</li>
+</ul>
+<h4 id="opsworks-">OpsWorks:</h4>
+<ul>
+<li>Chef/Puppet automation of environment configuration.</li>
+</ul>
+<h4 id="service-catalog-">Service Catalog:</h4>
+<ul>
+<li>Catalog of IT Services approved for use.</li>
+</ul>
+<h4 id="systems-manager-">Systems Manager:</h4>
+<ul>
+<li>Interface for managing EC2 resources. </li>
+<li>Grouping resources</li>
+<li>Departments</li>
+<li>Rollout of patches</li>
+</ul>
+<h4 id="trusted-advisor">Trusted Advisor</h4>
+<ul>
+<li>Advice around security and utilage. </li>
+</ul>
+<h4 id="managed-services-">Managed services:</h4>
+<ul>
+<li>Amazon managed EC2.</li>
+</ul>
+<h3 id="media-services-">Media Services:</h3>
+<h4 id="elastic-transcoder-">Elastic Transcoder:</h4>
+<ul>
+<li>Resizes media so it looks good on a variety of devices.</li>
+</ul>
+<h4 id="media-convert-">Media Convert:</h4>
+<ul>
+<li>File based video transcoder.</li>
+</ul>
+<h4 id="media-live-">Media Live:</h4>
+<ul>
+<li>Live video streaming</li>
+</ul>
+<h4 id="media-package-">Media Package:</h4>
+<ul>
+<li>Package videos for download</li>
+</ul>
+<h4 id="media-store-">Media Store:</h4>
+<ul>
+<li>Media storage</li>
+</ul>
+<h4 id="media-tailor-">Media Tailor:</h4>
+<ul>
+<li>Targetted advertising into video streams.</li>
+</ul>
+<h3 id="machine-learning-">Machine Learning:</h3>
+<h4 id="sage-maker-">Sage Maker:</h4>
+<ul>
+<li>Deep learning.</li>
+</ul>
+<h4 id="comprehend-">Comprehend:</h4>
+<ul>
+<li>Understand what the market is saying about your products.</li>
+</ul>
+<h4 id="deep-lens-">Deep Lens:</h4>
+<ul>
+<li>AR camera.</li>
+</ul>
+<h4 id="lex-">Lex:</h4>
+<ul>
+<li>AI customer chat. Powers Alexa.</li>
+</ul>
+<h4 id="machine-learning-">Machine Learning:</h4>
+<ul>
+<li>Analysis of data sets. Outcome prediction.</li>
+</ul>
+<h4 id="polly-">Polly:</h4>
+<ul>
+<li>Text to speech.</li>
+</ul>
+<h4 id="rekognition-">Rekognition:</h4>
+<ul>
+<li>Video and image recognition.</li>
+</ul>
+<h4 id="translate-">Translate:</h4>
+<ul>
+<li>Language translation</li>
+</ul>
+<h4 id="transcribe-">Transcribe:</h4>
+<ul>
+<li>Speech recognition and turns into text.</li>
+</ul>
+<h3 id="analytics-">Analytics:</h3>
+<h4 id="athena-">Athena:</h4>
+<ul>
+<li>SQL queries against S3 buckets.</li>
+</ul>
+<h4 id="elastic-map-reduce-emr-">Elastic Map Reduce (EMR)</h4>
+<ul>
+<li>Big Data</li>
+</ul>
+<h4 id="cloud-search-">Cloud Search:</h4>
+<ul>
+<li>Search services</li>
+</ul>
+<h4 id="elastic-search-">Elastic Search:</h4>
+<ul>
+<li>Search service</li>
+</ul>
+<h4 id="kinesis-">Kinesis:</h4>
+<ul>
+<li>Ingest large amounts of data. </li>
+</ul>
+<h4 id="kenesis-video-streams-">Kenesis Video Streams:</h4>
+<ul>
+<li>As above with video.</li>
+</ul>
+<h4 id="quick-sight">Quick Sight</h4>
+<ul>
+<li>BI tool. View business intelligence data.</li>
+</ul>
+<h4 id="data-pipeline">Data pipeline</h4>
+<ul>
+<li>Move data between different AWS services.</li>
+</ul>
+<h4 id="aws-glue">AWS Glue</h4>
+<ul>
+<li>ETL</li>
+</ul>
+<h3 id="security-identity-and-compliance">Security, Identity and Compliance</h3>
+<p>#### </p>
+<h3 id="mobile-services-">Mobile Services:</h3>
+<h3 id="ar-vr-">AR/VR:</h3>
+<h3 id="application-integration-">Application Integration:</h3>
+<h3 id="customer-engagement-">Customer Engagement:</h3>
+<h3 id="business-productivity-">Business Productivity:</h3>
+<h3 id="desktop-and-app-streaming-">Desktop and App Streaming:</h3>
+<h3 id="internet-of-things-">Internet of Things:</h3>
+<h3 id="game-development-">Game Development:</h3>
+</body>
+</html>

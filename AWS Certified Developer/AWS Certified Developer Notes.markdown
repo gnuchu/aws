@@ -1,7 +1,7 @@
 # AWS Notes: 
 AWS Terminology and Services
 
-## Lecture 1: 
+## 10000Ft Overview: 
 ### Region: 
 Geographical location where data centres can be located.
 
@@ -341,3 +341,12 @@ Geographical location used for caching. i.e. if asset is requested from London r
 ### Game Development:
 #### Gamelift:
 - Service to aid game development.
+
+
+## Certificates
+### AWS Solutions Architect Associate:
+[SA Image]: img/SA.png "Services to study" 
+
+### AWS Developer Associate:
+
+### AWS Sysops Associate:
